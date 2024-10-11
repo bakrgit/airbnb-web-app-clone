@@ -1,0 +1,13 @@
+{
+  "HomePage": {
+    "title": "Hello world!",
+    "about": "Go to the about page",
+    "change-lang": "Change language",
+    "contact": "Go to the contact page",
+    "change-theme": "Change theme"
+  },
+  "AboutPage": {
+    "title": "About page",
+      "home": "Go to the home page"
+  }
+}

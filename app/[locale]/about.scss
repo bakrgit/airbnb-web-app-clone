@@ -1,0 +1,10 @@
+@use 'styles/main.scss' as *;
+
+
+.bg-custom{
+    background-color: var(--background-color);
+}
+.text-color{
+  color: var(--text-color);
+  box-shadow: $shadow-xs;
+}

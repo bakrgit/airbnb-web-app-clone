@@ -1,0 +1,48 @@
+@use 'styles/main.scss' as *;
+// SCSS code
+.input {
+  display: none;
+
+  &:checked + .label {
+    .label-icon {
+      border-color: #ea3047;
+
+      &::before {
+        content: '';
+        background-color: #ea3047;
+      }
+    }
+  }
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--color-card-title);
+  font-weight: 700;
+
+  &-icon {
+    border: 1px solid #919191;
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 13px;
+      height: 13px;
+      position: absolute;
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: color 0.2s ease-in-out;
+    }
+  }
+}

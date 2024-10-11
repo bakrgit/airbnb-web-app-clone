@@ -1,0 +1,100 @@
+//colors
+:root {
+  --main-background-color: #fff;
+  --color-primary: #ea3047;
+  --color-secondary: #2e3d41;
+  --color-text-gray: #818181;
+  --color-text-dark-grey: #737373;
+  --color-text-light-gray: #919191;
+  --color-background: #f5f5f5;
+  --color-background-light: #fff;
+  --color-header-link: #150507;
+  --color-header-dropdown: #7b7b7b;
+  --color-items: #fff;
+  --color-heading: #292f33;
+  --color-footer-background: #2e3d41;
+  --color-footer-copy-background: #fff;
+  --color-footer-copy-text: #2e3d41;
+  --color-search-form-value: #150507;
+  --color-border: #d3d3d3;
+  --color-border-transparent: #d3d3d3;
+  --color-days: #6a6a6d;
+  --color-card-title: #000;
+  --color-card-text: #818181;
+  --color-radio: #808080;
+  --color-checkbox: #808080;
+  --color-checkbox-background: #e6e6e6;
+  --color-text: #000;
+  --color-dark-text: #1e0600;
+  --notification-card: #fef7f8;
+  --color-menu-link: #686868;
+  --color-light-text: #fff;
+  --color-success: #13c16d;
+}
+
+[data-theme='dark'] {
+  --main-background-color: #000;
+  --color-primary: #fff;
+  --color-secondary: #2e3d41;
+  --color-text-gray: #818181;
+  --color-text-dark-grey: #fff;
+  --color-text-light-gray: #fff;
+  --color-background: #000;
+  --color-background-light: #000;
+  --color-header-link: #fff;
+  --color-header-dropdown: #fff;
+  --color-items: #29292b;
+  --color-heading: #fff;
+  --color-footer-background: #29292a;
+  --color-footer-copy-background: #29292a;
+  --color-footer-copy-text: #fff;
+  --color-search-form-value: #fff;
+  --color-border: #fff;
+  --color-border-transparent: transparent;
+  --color-days: #fff;
+  --color-card-title: #fff;
+  --color-card-text: #fff;
+  --color-radio: #fff;
+  --color-checkbox: #cccccc;
+  --color-checkbox-background: #fff;
+  --color-text: #fff;
+  --color-dark-text: #fff;
+  --notification-card: #29292b;
+  --color-menu-link: #686868;
+  --color-light-text: #1e0600;
+}
+
+// Shadows
+$shadow-xs: 0 1px 3px 0 rgba(0, 0, 0, 0.06);
+$shadow-sm: 0 2px 8px 0 rgba(0, 0, 0, 0.06);
+$shadow-md: 0 2px 6px -2px rgba(0, 0, 0, 0.06);
+$shadow-lg: 0 20px 24px 2px rgba(0, 0, 0, 0.06);
+$shadow-xs: 0 24px 48px -12px rgba(0, 0, 0, 0.06);
+$shadow-site: 0 4px 4px 0 rgba(0, 0, 0, 0.12);
+
+// Border radius
+$radius-sm: 4px;
+$radius-md: 8px;
+$radius-lg: 12px;
+$radius-xl: 16px;
+$radius-full: 999px;
+// Devices screen sizes
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+// Font weight
+$font-light: 300;
+$font-normal: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+//Base Font Size
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-md: 16px;
+$font-size-lg: 18px;
+$font-size-xl: 20px;
+$font-size-xxl: 24px;
+$font-size-xxxl: 32px;
