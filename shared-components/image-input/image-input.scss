@@ -1,0 +1,53 @@
+@use 'styles/main.scss' as *;
+
+.image__wrapper {
+  margin-bottom: 16px;
+  width: 75px;
+  height: 75px;
+  overflow: hidden;
+
+  &-img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 1px solid #b6b5b5;
+    background-color: white;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  &-label {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+
+    &-icon {
+      background-color: white;
+      border-radius: 50%;
+      width: 26px;
+      height: 26px;
+      color: #ea3047;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      cursor: pointer;
+    }
+  }
+
+
+  &-input {
+    display: none;
+  }
+}
+
+.image__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
