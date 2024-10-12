@@ -16,6 +16,8 @@ export default function DummyComponent() {
     register,
     formState: { errors },
     setValue,
+    trigger,
+    setError,
   } = useForm();
 
   const onsubmit = (data: any) => {
@@ -90,6 +92,7 @@ export default function DummyComponent() {
         </div>
         <ImageInput name="image1" control={control} />
         <ImageInput name="image2" control={control} />
+
         <button type="submit">submit</button>
       </form>
     </div>
