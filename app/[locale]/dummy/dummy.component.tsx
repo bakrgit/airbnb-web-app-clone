@@ -3,10 +3,9 @@ import React from "react";
 import {
   CheckBox,
   EyeIcon,
-  ImageUploadIcon,
+  ImageInput,
   Input,
   RadioButton,
-  ImageInput,
 } from "@/shared-components";
 import { useForm } from "react-hook-form";
 
@@ -17,6 +16,8 @@ export default function DummyComponent() {
     register,
     formState: { errors },
     setValue,
+    trigger,
+    setError,
   } = useForm();
 
   const onsubmit = (data: any) => {
@@ -89,6 +90,9 @@ export default function DummyComponent() {
           <RadioButton register={register} label={"تجربه"} name={"radio1"} />
           <RadioButton register={register} label={"تجربه2"} name={"radio2"} />
         </div>
+        <ImageInput name="image1" control={control} />
+        <ImageInput name="image2" control={control} />
+
         <button type="submit">submit</button>
       </form>
     </div>
