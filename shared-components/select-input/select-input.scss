@@ -1,0 +1,94 @@
+.select-input__wrapper {
+  margin-bottom: 16px;
+}
+
+.select-input__label {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--color-text);
+  position: relative;
+  margin-inline-start: 16px;
+  margin-bottom: 4px;
+}
+
+.select-input__label--required::after {
+  position: absolute;
+  content: '*';
+  color: #ea3047;
+  margin-inline-start: 2px;
+}
+
+.select-input--has-error .select-input__control {
+  border-color: #ea3047 !important;
+}
+
+.select-input--has-error .select-input:hover {
+  border-color: #ea3047 !important;
+}
+
+.select-input__control {
+  border-radius: 20px !important;
+  height: 40px !important;
+  background-color: var(--color-items) !important;
+}
+
+.select-input--is-focused {
+  border: 1px solid #cccccc !important;
+  box-shadow: none !important;
+}
+
+.select-input__value-container {
+  padding: 0 16px !important;
+}
+
+.select-input__input-container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.select-input__placeholder {
+  margin: 0 !important;
+  color: #ccc !important;
+  font-size: 12px !important;
+}
+
+.select-input__indicator-separator {
+  display: none !important;
+}
+
+.select-input__single-value {
+  font-size: 14px !important;
+}
+
+.select-input__menu {
+  border: 1px solid var(--color-border-transparent) !important;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08) !important;
+  border-radius: 20px !important;
+  overflow: hidden !important;
+  padding: 16px 0 !important;
+  background-color: var(--color-items) !important;
+  z-index: 10 !important;
+}
+
+.select-input__option {
+  cursor: pointer !important;
+  /* padding: 0 24px !important; */
+  margin-bottom: 4px !important;
+  background-color: transparent !important;
+  color: var(--color-header-link) !important;
+}
+
+.select-input__option--is-focused {
+  background-color: rgba(234, 48, 71, 0.5) !important;
+  color: #fff !important;
+}
+
+.select-input__option--is-selected {
+  background-color: #ea3047 !important;
+  color: #fff !important;
+}
+
+.select-input--dashboard .select-input__control,
+.select-input--dashboard .select-input__menu {
+  border-radius: 4px !important;
+}
