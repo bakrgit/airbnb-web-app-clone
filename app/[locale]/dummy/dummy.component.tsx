@@ -1,11 +1,14 @@
 "use client";
 import React from "react";
 import {
+  AddUnitImages,
   CheckBox,
+  CounterInput,
   EyeIcon,
   ImageInput,
   Input,
   RadioButton,
+  SelectInput,
 } from "@/shared-components";
 import { useForm } from "react-hook-form";
 
@@ -89,11 +92,43 @@ export default function DummyComponent() {
           <CheckBox label={"حجز"} name={"testCheckBox2"} control={control} />
           <RadioButton register={register} label={"تجربه"} name={"radio1"} />
           <RadioButton register={register} label={"تجربه2"} name={"radio2"} />
+          <ImageInput name="image1" control={control} />
+          <ImageInput name="image2" control={control} />
         </div>
-        <ImageInput name="image1" control={control} />
-        <ImageInput name="image2" control={control} />
-
-        <button type="submit">submit</button>
+        <AddUnitImages
+          name={"imageArray"}
+          control={control}
+          setValue={setValue}
+          trigger={trigger}
+        />
+        <br />
+        <CounterInput
+          name={"counter"}
+          control={control}
+          setValue={setValue}
+          label={"عدد الغرف"}
+        />
+        <br />
+        <CounterInput name={"counter2"} control={control} setValue={setValue} />
+        <br />
+        <SelectInput
+          control={control}
+          name={"select"}
+          label={"اختر القيمه"}
+          placeholder={"اختر "}
+          options={[
+            { label: "test1", value: "1" },
+            { label: "test2", value: "2" },
+            {
+              label: "test3",
+              value: "3",
+            },
+            { label: "test4", value: "4" },
+          ]}
+        />
+        <button type="submit" className="mt-5">
+          submit
+        </button>
       </form>
     </div>
   );
