@@ -1,0 +1,40 @@
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+}
+
+.buttons p {
+  margin: 0;
+  width: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-search-form-value);
+}
+
+.button {
+  width: 20px;
+  height: 20px;
+  border: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #ea3047;
+  color: #fff;
+}
+
+.button--disabled {
+  background-color: #919191;
+}
+
+
+.label {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: var(--color-text);
+}
