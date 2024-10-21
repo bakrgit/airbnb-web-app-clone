@@ -1,0 +1,29 @@
+
+.add-map-wrapper {
+  margin-bottom: 32px;
+}
+
+.add-map {
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 8px !important;
+}
+
+.add-map-label {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--color-text);
+  position: relative;
+  margin-inline-start: 16px;
+  margin-bottom: 4px;
+}
+
+.add-map-label--required::after {
+  position: absolute;
+  content: '*';
+  color: #ea3047;
+  margin-inline-start: 2px;
+}
+
