@@ -7,6 +7,7 @@ import {
   EyeIcon,
   ImageInput,
   Input,
+  MapInput,
   RadioButton,
   SelectInput,
 } from "@/shared-components";
@@ -125,6 +126,13 @@ export default function DummyComponent() {
             },
             { label: "test4", value: "4" },
           ]}
+        />
+        <br />
+        <MapInput
+          control={control}
+          name={"map"}
+          label={"الموقع"}
+          required={false}
         />
         <button type="submit" className="mt-5">
           submit
